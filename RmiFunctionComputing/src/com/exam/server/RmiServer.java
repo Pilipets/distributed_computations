@@ -1,4 +1,4 @@
-package com.exam.rmi;
+package com.exam.server;
 
 import com.exam.computations.FunctionCalculator;
 

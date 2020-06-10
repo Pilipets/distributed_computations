@@ -46,7 +46,7 @@ public class Client {
             List<Double> results = client.compute(a, xMin, xMax, xDelta);
             int idx = 0;
             for (double x = xMin; x <= xMax; x += xDelta) {
-                System.out.println("[" + x + "|" + results.get(idx) + "]");
+                System.out.println("[x=" + x + "|f(x)=" + results.get(idx) + "]");
                 idx++;
             }
             client.disconnect();
