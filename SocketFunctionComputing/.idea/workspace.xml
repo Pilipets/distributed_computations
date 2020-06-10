@@ -7,20 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e352df4-81b3-49c1-82cc-09b47548174f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../RmiFunctionComputing/.idea/RmiFunctionComputing.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RmiFunctionComputing/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RmiFunctionComputing/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RmiFunctionComputing/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RmiFunctionComputing/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../RmiFunctionComputing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RmiFunctionComputing/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RmiFunctionComputing/RmiFunctionComputing" beforeDir="false" afterPath="$PROJECT_DIR$/../RmiFunctionComputing/RmiFunctionComputing.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RmiFunctionComputing/src/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RmiFunctionComputing/src/com/exam/rmi/RmiServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RmiFunctionComputing/src/com/exam/server/RmiServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/SocketFunctionComputing.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SocketFunctionComputing.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exam/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exam/client/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RmiFunctionComputing/src/com/exam/rmi_task/FunctionSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RmiFunctionComputing/src/com/exam/rmi_task/FunctionSolver.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,19 +37,19 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../RmiFunctionComputing" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
-  <component name="RunManager" selected="Application.Client">
-    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.exam.client.Client" />
+  <component name="RunManager" selected="Application.MySocketClient">
+    <configuration name="MySocketClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.exam.socket_task.MySocketClient" />
       <module name="SocketFunctionComputing" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.exam.client.*" />
+          <option name="PATTERN" value="com.exam.socket_task.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -69,12 +57,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.exam.server.MyServer" />
+    <configuration name="MySocketServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.exam.socket_task.MySocketServer" />
       <module name="SocketFunctionComputing" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.exam.server.*" />
+          <option name="PATTERN" value="com.exam.socket_task.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -84,8 +72,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Client" />
-        <item itemvalue="Application.MyServer" />
+        <item itemvalue="Application.MySocketClient" />
+        <item itemvalue="Application.MySocketServer" />
       </list>
     </recent_temporary>
   </component>
@@ -103,7 +91,10 @@
       <workItem from="1591778144705" duration="278000" />
       <workItem from="1591780784133" duration="1816000" />
       <workItem from="1591782623641" duration="582000" />
-      <workItem from="1591784064066" duration="819000" />
+      <workItem from="1591784064066" duration="1286000" />
+      <workItem from="1591787835876" duration="16000" />
+      <workItem from="1591799796059" duration="537000" />
+      <workItem from="1591800666791" duration="316000" />
     </task>
     <servers />
   </component>
@@ -134,34 +125,34 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="620" y="304" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.824@0.0.1536.824" timestamp="1591780798372" />
-    <state x="370" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1591782459867">
+    <state x="370" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1591800201093">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="370" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1591782459867" />
+    <state x="370" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1591800201093" />
     <state x="370" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.834@0.0.1536.834" timestamp="1591775930323" />
-    <state x="549" y="170" key="FileChooserDialogImpl" timestamp="1591784131153">
+    <state x="549" y="170" key="FileChooserDialogImpl" timestamp="1591787850680">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1591784131153" />
-    <state width="1493" height="33" key="GridCell.Tab.0.bottom" timestamp="1591782601757">
+    <state x="549" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1591787850680" />
+    <state width="1493" height="193" key="GridCell.Tab.0.bottom" timestamp="1591800711784">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="33" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591782601757" />
+    <state width="1493" height="193" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591800711784" />
     <state width="1493" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1591776945792" />
-    <state width="1493" height="33" key="GridCell.Tab.0.center" timestamp="1591782601757">
+    <state width="1493" height="193" key="GridCell.Tab.0.center" timestamp="1591800711784">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="33" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1591782601757" />
+    <state width="1493" height="193" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1591800711784" />
     <state width="1493" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1591776945792" />
-    <state width="1493" height="33" key="GridCell.Tab.0.left" timestamp="1591782601757">
+    <state width="1493" height="193" key="GridCell.Tab.0.left" timestamp="1591800711784">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="33" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1591782601757" />
+    <state width="1493" height="193" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1591800711784" />
     <state width="1493" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1591776945792" />
-    <state width="1493" height="33" key="GridCell.Tab.0.right" timestamp="1591782601757">
+    <state width="1493" height="193" key="GridCell.Tab.0.right" timestamp="1591800711784">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="33" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1591782601757" />
+    <state width="1493" height="193" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1591800711784" />
     <state width="1493" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1591776945792" />
     <state x="277" y="0" key="SettingsEditor" timestamp="1591784883943">
       <screen x="0" y="0" width="1536" height="824" />

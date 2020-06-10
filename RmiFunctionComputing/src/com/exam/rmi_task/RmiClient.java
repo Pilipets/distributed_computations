@@ -1,7 +1,4 @@
-package com.exam.client;
-
-import com.exam.computations.ICalculator;
-import com.exam.computations.ICalculator;
+package com.exam.rmi_task;
 
 import java.net.MalformedURLException;
 import java.rmi.Naming;
@@ -10,17 +7,15 @@ import java.rmi.RemoteException;
 import java.util.List;
 import java.util.Scanner;
 
-public class RmiClient {
-    private ICalculator calculator;
-    private String remoteURL = "//127.0.0.1:2799/calculator";
+class RmiClient {
+    private SolverInterface functionSolver;
 
-    public RmiClient() throws RemoteException, NotBoundException, MalformedURLException {
-        calculator = (ICalculator) Naming.lookup(remoteURL);
-        System.out.println("RMI object found");
+    public RmiClient(String remoteURL) throws RemoteException, NotBoundException, MalformedURLException {
+        functionSolver = (SolverInterface) Naming.lookup(remoteURL);
     }
 
     public List<Double> compute(double a, double xMin, double xMax, double xDelta) throws RemoteException {
-        return calculator.compute(a,xMin,xMax,xDelta);
+        return functionSolver.compute(a,xMin,xMax,xDelta);
     }
     public static void main(String[] args) {
         System.out.println("Computation of function: a*sin(x)");
@@ -35,8 +30,7 @@ public class RmiClient {
         double xDelta = in.nextDouble();
 
         try {
-            RmiClient rmiClient = new RmiClient();
-            List<Double> results = rmiClient.compute(
+            List<Double> results = new RmiClient("//127.0.0.1:2799/functionSolver").compute(
                     a,
                     xMin,xMax,
                     xDelta);

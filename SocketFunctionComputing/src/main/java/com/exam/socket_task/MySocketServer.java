@@ -1,23 +1,19 @@
-package com.exam.server;
-
-import com.exam.computations.ComputeParams;
-import com.exam.computations.FunctionCalculator;
-import com.exam.computations.ICalculator;
+package com.exam.socket_task;
 
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-public class MyServer {
+public class MySocketServer {
     private ServerSocket server = null;
     private Socket sock = null;
     private ObjectInputStream objectInputStream = null;
     private ObjectOutputStream objectOutputStream = null;
-    private ICalculator calculator;
+    private FunctionSolver functionSolver;
 
     public void start(int port) throws IOException, ClassNotFoundException {
         server = new ServerSocket(port);
-        calculator = new FunctionCalculator();
+        functionSolver = new FunctionSolver();
         while (true) {
             sock = server.accept();
             objectInputStream = new ObjectInputStream(sock.getInputStream());
@@ -30,7 +26,7 @@ public class MyServer {
 
     private void processMessage() throws IOException, ClassNotFoundException {
         ComputeParams params = (ComputeParams) objectInputStream.readObject();
-        objectOutputStream.writeObject(calculator.compute(
+        objectOutputStream.writeObject(functionSolver.compute(
                 params.a,
                 params.xMin,params.xMax,
                 params.xDelta)
@@ -38,8 +34,7 @@ public class MyServer {
     }
 
     public static void main(String[] args) throws IOException, ClassNotFoundException {
-        MyServer server = new MyServer();
+        MySocketServer server = new MySocketServer();
         server.start(2799);
     }
-
 }

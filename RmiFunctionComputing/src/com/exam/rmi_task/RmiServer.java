@@ -1,15 +1,13 @@
-package com.exam.server;
-
-import com.exam.computations.FunctionCalculator;
+package com.exam.rmi_task;
 
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 
-public class RmiServer {
+class RmiServer {
     public static void main(String[] args) throws RemoteException {
-        FunctionCalculator calc = new FunctionCalculator();
+        SolverInterface solver = new FunctionSolver();
         Registry registry = LocateRegistry.createRegistry(2799);
-        registry.rebind("calculator",calc);
+        registry.rebind("functionSolver",solver);
     }
 }

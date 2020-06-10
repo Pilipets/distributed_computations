@@ -1,18 +1,16 @@
-package com.exam.client;
-
-import com.exam.computations.ComputeParams;
+package com.exam.socket_task;
 
 import java.io.*;
 import java.net.Socket;
 import java.util.List;
 import java.util.Scanner;
 
-public class Client {
+class MySocketClient {
     private Socket sock;
     private ObjectOutputStream objectOutputStream;
     private ObjectInputStream objectInputStream;
 
-    public Client(String ip, int port) throws IOException {
+    public MySocketClient(String ip, int port) throws IOException {
         sock = new Socket(ip, port);
         objectOutputStream = new ObjectOutputStream(sock.getOutputStream());
         objectInputStream = new ObjectInputStream(sock.getInputStream());
@@ -42,7 +40,7 @@ public class Client {
         double xDelta = in.nextDouble();
 
         try {
-            Client client = new Client("localhost",2799);
+            MySocketClient client = new MySocketClient("localhost",2799);
             List<Double> results = client.compute(a, xMin, xMax, xDelta);
             int idx = 0;
             for (double x = xMin; x <= xMax; x += xDelta) {

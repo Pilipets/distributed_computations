@@ -1,17 +1,17 @@
-package com.exam.computations;
+package com.exam.rmi_task;
 
+import java.rmi.Remote;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FunctionCalculator extends UnicastRemoteObject implements ICalculator {
-    public FunctionCalculator() throws RemoteException {
+interface SolverInterface extends Remote {
+    List<Double> compute(double a, double xMin, double xMax, double xDelta) throws RemoteException;
+}
+class FunctionSolver extends UnicastRemoteObject implements SolverInterface{
+    public FunctionSolver() throws RemoteException {
         super();
-    }
-
-    private double func(double a, double x){
-        return a* Math.sin(x);
     }
 
     @Override
@@ -21,5 +21,9 @@ public class FunctionCalculator extends UnicastRemoteObject implements ICalculat
             results.add(func(a,x));
         }
         return results;
+    }
+
+    private double func(double a, double x){
+        return a* Math.sin(x);
     }
 }
