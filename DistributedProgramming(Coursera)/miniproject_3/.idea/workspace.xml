@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fb6da505-6b1c-4efa-94fc-433e823b3c51" name="Default Changelist" comment="" />
+    <list default="true" id="fb6da505-6b1c-4efa-94fc-433e823b3c51" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Lab8/src/Lab8/Matrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab8/src/Lab8/Matrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RmiFunctionComputing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../RmiFunctionComputing/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SocketFunctionComputing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../SocketFunctionComputing/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -16,6 +23,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1cDkDFwuwhhmrmhEUG3lRe02LY5" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -25,7 +33,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../miniproject_2" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -91,6 +99,7 @@
       <updated>1590070429894</updated>
       <workItem from="1590070432749" duration="18056000" />
       <workItem from="1590094044253" duration="65000" />
+      <workItem from="1591864131278" duration="14000" />
     </task>
     <servers />
   </component>
@@ -102,10 +111,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="223" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1590076296271" />
-    <state x="445" y="125" key="FileChooserDialogImpl" timestamp="1590074751797">
+    <state x="445" y="125" key="FileChooserDialogImpl" timestamp="1591864143248">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="445" y="125" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1590074751797" />
+    <state x="445" y="125" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1591864143248" />
     <state width="1493" height="261" key="GridCell.Tab.0.bottom" timestamp="1590093567479">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

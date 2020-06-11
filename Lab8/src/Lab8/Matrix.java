@@ -3,13 +3,8 @@ package Lab8;
 import java.util.Random;
 
 public class Matrix {
-    // Матриця у вигляді одномірного масиву
     int[] matrix;
-
-    // Розміри матриці
     int height, width;
-
-    // Назва матриці
     String name;
 
     Matrix(int height, int width, String name) {
@@ -26,7 +21,6 @@ public class Matrix {
         this.name = name;
     }
 
-    // Заповнення матриці випадковими цілими числами у заданих межах
     public void fillRandom(int maxNumber) {
         Random rand = new Random();
         for (int i = 0; i < height * width; i++)

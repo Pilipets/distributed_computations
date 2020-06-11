@@ -15,7 +15,7 @@ class FunctionSolver extends UnicastRemoteObject implements SolverInterface{
     }
 
     @Override
-    public synchronized List<Double> compute(double a, double xMin, double xMax, double xDelta) {
+    public List<Double> compute(double a, double xMin, double xMax, double xDelta) {
         ArrayList<Double> results = new ArrayList<>();
         for(double x = xMin; x <= xMax; x += xDelta){
             results.add(func(a,x));

@@ -3,28 +3,34 @@ package com.exam.socket_task;
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 public class MySocketServer {
     private ServerSocket server = null;
-    private Socket sock = null;
-    private ObjectInputStream objectInputStream = null;
-    private ObjectOutputStream objectOutputStream = null;
     private FunctionSolver functionSolver;
 
-    public void start(int port) throws IOException, ClassNotFoundException {
+    public void start(int port) throws IOException {
         server = new ServerSocket(port);
         functionSolver = new FunctionSolver();
+
+        final ExecutorService executor = Executors.newFixedThreadPool(6);
         while (true) {
-            sock = server.accept();
-            objectInputStream = new ObjectInputStream(sock.getInputStream());
-            objectOutputStream = new ObjectOutputStream(sock.getOutputStream());
-            while (true) {
-                processMessage();
-            }
+            Socket listenerSocket = server.accept();
+            executor.submit(()-> {
+                try {
+                    processMessage(listenerSocket);
+                } catch (IOException | ClassNotFoundException e) {
+                    throw new RuntimeException(e);
+                }
+            });
         }
     }
 
-    private void processMessage() throws IOException, ClassNotFoundException {
+    private void processMessage(final Socket listenerSocket) throws IOException, ClassNotFoundException {
+        ObjectInputStream objectInputStream = new ObjectInputStream(listenerSocket.getInputStream());
+        ObjectOutputStream objectOutputStream = new ObjectOutputStream(listenerSocket.getOutputStream());;
+
         ComputeParams params = (ComputeParams) objectInputStream.readObject();
         objectOutputStream.writeObject(functionSolver.compute(
                 params.a,
@@ -33,7 +39,7 @@ public class MySocketServer {
         );
     }
 
-    public static void main(String[] args) throws IOException, ClassNotFoundException {
+    public static void main(String[] args) throws IOException {
         MySocketServer server = new MySocketServer();
         server.start(2799);
     }
